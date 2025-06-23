@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook-P5-TM01A</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1A 5to Primaria</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Que los estudiantes conozcan el Nezha Pro Sports Kit, identifiquen sus componentes clave (especialmente los motores "Smart Brick" y la placa Nezha Pro), comprendan las normas de seguridad, exploren aplicaciones de robots móviles en deportes/juegos, y, con la ayuda del chatbot Xolo, definan su "idea" y reciban el plan para un robot simple con movimiento básico de ruedas que construirán en la Sesión 1B.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Activación y personalización de la IA.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Ejemplificación:</strong> Clarificar objetivos y mostrar posibilidades.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Aprendizaje guiado por IA sobre conceptos y comandos.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Proceso de ideación, diseño (plan con IA) y planificación en equipo.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Compartición de planes y retroalimentación.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>El "plan" (GCS) guardado por cada equipo para programar el movimiento básico de un robot de dos ruedas, listo para ser implementado en la Sesión 1B.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
+                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-12).</li>
+                                        <li>1 Nezha Pro Sports Kit por equipo de 4 estudiantes, con sus componentes clave:
+                                            <ul>
+                                                <li>Placa Nezha Pro</li>
+                                                <li>Motores Inteligentes (PlanetX Smart Brick Motor)</li>
+                                                <li>Piezas de Construcción (vigas, conectores, ruedas)</li>
+                                                <li>Sensores PlanetX (seguidor de línea, color, ultrasonido, etc.)</li>
+                                                <li>Smart A.I. Lens</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Verificar conexión a internet.</li>
+                                                <li>Confirmar acceso y funcionamiento de MakeCode.</li>
+                                                <li>Tener los kits Nezha Pro Sports listos y organizados para su distribución.</li>
+                                                <li>Tener la presentación de diapositivas (1-12) lista y en orden.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
+                                        <li><strong>Preparación Física:</strong> Tener un kit Nezha físico a mano para la demostración de los componentes.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
+                <p>Crear un ambiente acogedor, establecer el tono de la clase "Misión Gnius", recordar a la IA el perfil de cada alumno y activar la IA.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida e Instrucción ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) Saludar a los alumnos y dar la instrucción clara para activar a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, Genios! 👋 ¡Bienvenidos a la Misión de hoy! Antes de comenzar, activaremos a nuestro copiloto, Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo: <strong>'Hola Xolo, soy Ana y mis gustos son los unicornios y programar'</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Interacción con Xolo ⏰ 2 minutos</h3>
+                            <p>Monitorear la interacción de los alumnos con la IA y asegurarse de que todos reciban el saludo de bienvenida.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Veo que Xolo les está contestando y está listo para aprender con nosotros. Asegúrense de que todos hayan recibido su saludo de bienvenida. Si Xolo no les ha respondido, ¡avísenme!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar el objetivo de la clase, mostrar los componentes del kit y las normas de seguridad.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Kit ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) Presentar físicamente el kit Nezha y su propósito general.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, equipo. ¡Miren esto! Este es el Nezha Pro Sports Kit. Está lleno de piezas, sensores y unos motores muy especiales para construir robots deportivos. Hoy vamos a descubrir qué tesoros esconde esta caja.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Exploración de Componentes Clave ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) Mostrar y explicar las partes más importantes del kit una por una.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Vamos a destacar las estrellas del show. Primero, la <strong>Placa Nezha Pro</strong>: este es el nuevo centro de control para nuestro Micro:bit. Tiene puertos especiales para conectar todo. Luego, los <strong>Motores Inteligentes</strong>: estos no son comunes, son 'inteligentes' porque pueden ser muy precisos en velocidad y ángulo. También tenemos una gran variedad de <strong>piezas de construcción</strong> como vigas, conectores y ruedas. Y, por supuesto, nuevos <strong>sensores</strong> como seguidores de línea, de color, de ultrasonido ¡y nuestra cámara inteligente, la <strong>A.I. Lens</strong>!</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Seguridad y "I Can Statement" ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 6 y luego la 3) Establecer normas de seguridad y presentar el objetivo de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Antes de continuar, una regla de oro: al construir y probar, siempre con cuidado. Las piezas son pequeñas y los robots se mueven. Seguiremos las indicaciones para trabajar seguros. Ahora sí, nuestra misión de hoy: vamos a explorar qué tipo de robots podemos construir con estas piezas, especialmente los que usan ruedas. Al final de esta sesión, podrán decir: <strong>'Yo puedo describir las partes principales del Nezha Pro Sports Kit, imaginar un robot deportivo simple con ruedas, y tener el plan de cómo programar su movimiento básico con la ayuda de Xolo.'</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM ⏰ 15 minutos</h2>
+                <p>Guiar a los alumnos para que interactúen con Xolo para aprender sobre las posibilidades del kit y los comandos para los motores.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Activación y Exploración con Xolo ⏰ 7 minutos</h3>
+                            <p>(Proyectar Diapositiva 7) Los alumnos usan un comando específico para pedir información a Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es hora de entrar al AI GYM! Para que Xolo les dé información personalizada, escriban en el chat el siguiente comando: <strong>'Mi perfil es [escribe aquí tus gustos/intereses] y quiero que me enseñes sobre el kit Nezha y cómo controlar sus motores con ruedas'</strong>. Xolo les describirá ejemplos de robots y les explicará cómo los motores inteligentes nos permiten controlar el movimiento con gran precisión.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Introducción al Plan (GCS) ⏰ 8 minutos</h3>
+                            <p>(Proyectar Diapositiva 8) El facilitador guía la atención hacia los comandos específicos que Xolo presentará.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Excelente! Ya escucharon algunas ideas de robots. Ahora, lo más importante: ¿cómo les damos órdenes? Xolo les va a enseñar el lenguaje para nuestro 'plan'. Escuchen con atención, él les describirá los comandos que usaremos.</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">"Para controlar los motores de las ruedas, usaremos comandos específicos. Por ejemplo:
+
+nezha_motor_M1_velocidad(VELOCIDAD)
+nezha_motor_M2_velocidad(VELOCIDAD)
+
+Si queremos ir recto, M1 y M2 deben tener la misma velocidad. Para girar, podemos hacer que una rueda vaya más rápido."</pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 10 minutos</h2>
+                <p>Proceso de diseño conceptual en equipos para definir una "idea" y obtener el "plan" con ayuda de Xolo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Formación de Equipos e Ideación ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 9) Organizar a los alumnos y lanzar el desafío de diseño, ofreciendo ayuda de Xolo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Muy bien, es hora del Brain Spark! Formen sus equipos. Su desafío es el siguiente: Imaginen el robot más simple con dos ruedas motrices que puedan construir. ¿Qué movimiento básico quieren que haga? Discutan y elijan su idea. Si no se les ocurre nada, ¡no hay problema! Escriban en el chat con Xolo el comando exacto: <strong>'Exploremos ideas juntos para un robot simple con dos ruedas motrices del kit Nezha'</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Creando el Plan con Xolo ⏰ 6 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) Guiar a los equipos para que comuniquen su idea a Xolo y reciban el plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¿Ya tienen su idea? ¡Genial! Ahora, descríbansela a Xolo con mucho detalle. Por ejemplo: 'Queremos un coche que avance con A, retroceda con B y gire cuando inclinamos el Micro:bit'. Xolo tomará su idea y la convertirá en un plan detallado. ¡Este será su mapa para la próxima clase!</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">// Ejemplo de plan para coche con botones e inclinación
+AL INICIO:
+    mostrar texto "Coche Listo!"
+
+POR SIEMPRE:
+    SI (botón A presionado):
+        nezha_motor_M1_velocidad(60)
+        nezha_motor_M2_velocidad(60)
+    SINO SI (botón B presionado):
+        nezha_motor_M1_velocidad(-60)
+        nezha_motor_M2_velocidad(-60)
+    SINO SI (Microbit inclinado izquierda):
+        nezha_motor_M1_velocidad(-40)
+        nezha_motor_M2_velocidad(40)
+    SINO SI (Microbit inclinado derecha):
+        nezha_motor_M1_velocidad(40)
+        nezha_motor_M2_velocidad(-40)
+    SINO:
+        nezha_motor_M1_velocidad(0)
+        nezha_motor_M2_velocidad(0)
+    FIN SI</pre>
+                                 <p class="dialogue assistant">¡Guarden muy bien este plan! En la siguiente sesión, lo usaremos para construir y dar vida a su robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Compartir los planes de los robots y reflexionar sobre el diseño.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) Instrucción para la reflexión individual sobre el plan.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                     ¡Genios, antes de compartir, tómense un momento para pensar en su plan! Mírenlo bien. ¿Entienden cada parte? ¿Creen que funcionará?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Gnius STORM (Share - Grupo) ⏰ 3 minutos</h3>
+                            <p>Instrucciones para compartir los planes en equipo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">
+                                    ¡Ahora, es momento de compartir! Un portavoz de cada equipo nos va a contar brevemente el tipo de robot con ruedas que imaginó y el movimiento principal que planearon. Escuchemos las ideas de todos los equipos.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Gnius STORM (Reflexión Final y Cierre) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 12) Cierre de la sesión y conexión con la siguiente clase.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Fantásticas ideas para sus primeros robots deportivos! Ya tienen el plan. En la próxima clase, Xolo les ayudará con ideas para construir la estructura, y luego le darán vida a sus robots con el código. ¡Será muy emocionante! ¡Gran trabajo de diseño hoy, equipo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
